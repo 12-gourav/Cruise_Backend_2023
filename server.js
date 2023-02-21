@@ -11,6 +11,8 @@ import { dirname } from 'path';
 const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+
+
 mongoose.connect(
   "mongodb+srv://yug:9826112003@cluster0.1lluo.mongodb.net/?retryWrites=true&w=majority"
 ).then(()=>{
